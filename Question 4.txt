@@ -1,0 +1,1 @@
+select employer_name,year from(Select rank() over(partition by year order by Tpet desc)as rank_1,employer_name,year from(Select count(*)as Tpet,employer_name,year from h1b_final group by employer_name,year) a)b where rank_1<6 and year is not null;

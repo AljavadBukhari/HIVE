@@ -1,0 +1,1 @@
+select year,count(soc_name) as countnumbers from h1b_final where job_title='DATA ENGINEER' group by year order by year;

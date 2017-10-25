@@ -1,0 +1,11 @@
+select soc_name, count(job_title) as Maximum ,year from h1b_final where job_title = 'DATA SCIENTIST' and year='2011' group by soc_name,year order by Maximum desc;
+
+select soc_name, count(job_title) as Maximum ,year from h1b_final where job_title = 'DATA SCIENTIST' and year='2012' group by soc_name,year order by Maximum desc;
+
+select soc_name, count(job_title) as Maximum ,year from h1b_final where job_title = 'DATA SCIENTIST' and year='2013' group by soc_name,year order by Maximum desc;
+
+select soc_name, count(job_title) as Maximum ,year from h1b_final where job_title = 'DATA SCIENTIST' and year='2014' group by soc_name,year order by Maximum desc;
+
+select soc_name, count(job_title) as Maximum ,year from h1b_final where job_title = 'DATA SCIENTIST' and year='2015' group by soc_name,year order by Maximum desc;
+
+select soc_name, count(job_title) as Maximum ,year from h1b_final where job_title = 'DATA SCIENTIST' and year='2016' group by soc_name,year order by Maximum desc;
